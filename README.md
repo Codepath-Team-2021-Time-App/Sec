@@ -81,8 +81,7 @@ The purpose of the app is to keep track of your habits/actions on a day to day b
     * Same Page
 
 ## Wireframes
-[Add picture of your hand sketched wireframes in this section]
-<img src="YOUR_WIREFRAME_IMAGE_URL" width=600>
+<img src="https://github.com/Codepath-Team-2021-Time-App/Sec/blob/main/Screenshot%202021-11-05%20212041.png" width=600>
 
 ### [BONUS] Digital Wireframes & Mockups
 
