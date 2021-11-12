@@ -1,4 +1,4 @@
-# Sec
+# timeit!
 
 ## Table of Contents
 1. [Overview](#Overview)
@@ -77,7 +77,7 @@ The purpose of the app is to keep track of your habits/actions on a day to day b
     * Same Page
 
 ## Wireframes
-<img src="https://github.com/Codepath-Team-2021-Time-App/Sec/blob/main/Screenshot%202021-11-05%20212041.png" width=600>
+<img src="https://github.com/Codepath-Team-2021-Time-App/Sec/blob/main/Screenshot%202021-11-11%20194123.png" width=600>
 
 ### [BONUS] Digital Wireframes & Mockups
 
@@ -138,15 +138,13 @@ The purpose of the app is to keep track of your habits/actions on a day to day b
 - [OPTIONAL: List endpoints if using existing API such as Yelp]
 - import com.google.api.services.calendar.Calendar;
 
-// ...
+        // Initialize Calendar service with valid OAuth credentials
+        Calendar service = new Calendar.Builder(httpTransport, jsonFactory, credentials)
+            .setApplicationName("applicationName").build();
 
-// Initialize Calendar service with valid OAuth credentials
-Calendar service = new Calendar.Builder(httpTransport, jsonFactory, credentials)
-    .setApplicationName("applicationName").build();
+        // Retrieve the calendar
+        com.google.api.services.calendar.model.Calendar calendar =
+            service.calendars().get('primary').execute();
 
-// Retrieve the calendar
-com.google.api.services.calendar.model.Calendar calendar =
-    service.calendars().get('primary').execute();
-
-System.out.println(calendar.getSummary());
+        System.out.println(calendar.getSummary());
 
