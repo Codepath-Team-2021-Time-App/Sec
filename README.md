@@ -1,4 +1,4 @@
-# timeit!
+# TimeIt!
 
 ## Table of Contents
 1. [Overview](#Overview)
