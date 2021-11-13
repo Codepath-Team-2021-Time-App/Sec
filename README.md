@@ -99,8 +99,8 @@ The purpose of the app is to keep track of your habits/actions on a day to day b
 #### List of network requests by screen
 - Google API Screen
       - (Read/GET) read all events from the user and display to Google API Frame
-         ```swift
-         import com.google.api.services.calendar.Calendar;
+
+        import com.google.api.services.calendar.Calendar;
 
         // Initialize Calendar service with valid OAuth credentials
         Calendar service = new Calendar.Builder(httpTransport, jsonFactory, credentials)
@@ -117,7 +117,6 @@ The purpose of the app is to keep track of your habits/actions on a day to day b
 
 - Timeline Frame
       - (Read/GET) read all events from user and display to Timeline Frame
-        import com.google.api.services.calendar.Calendar;
 
         import com.google.api.services.calendar.Calendar;
         import com.google.api.services.calendar.model.Event;
