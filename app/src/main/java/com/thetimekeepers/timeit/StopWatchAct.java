@@ -34,7 +34,7 @@ public class StopWatchAct extends AppCompatActivity {
         //load animations
         roundingalone = AnimationUtils.loadAnimation(this, R.anim.roundingalone);
 
-        //import font
+       //import font
         Typeface MMedium = Typeface.createFromAsset(getAssets(), "fonts/MMedium.ttf");
 
         //customize font

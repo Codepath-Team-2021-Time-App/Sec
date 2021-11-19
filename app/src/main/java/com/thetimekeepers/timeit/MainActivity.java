@@ -50,7 +50,7 @@ public class MainActivity extends AppCompatActivity {
         });
 
         //import font
-        Typeface MLight = Typeface.createFromAsset(getAssets(),"fonts/MLight");
+        Typeface MLight = Typeface.createFromAsset(getAssets(),"fonts/MLight.ttf");
         Typeface MMedium = Typeface.createFromAsset(getAssets(), "fonts/MMedium.ttf");
         Typeface MRegular = Typeface.createFromAsset(getAssets(), "fonts/MRegular.ttf");
 
