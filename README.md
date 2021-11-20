@@ -129,3 +129,6 @@ The purpose of the app is to keep track of your habits/actions on a day to day b
         Event event = service.events().get('primary', "eventId").execute();
 
         System.out.println(event.getSummary());
+
+### Current Progress - Unit 10 Milestone
+<img src="unit10-milestone1.gif" width=200>

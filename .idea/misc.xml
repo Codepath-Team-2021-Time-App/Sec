@@ -6,8 +6,10 @@
         <entry key="..\:/Users/edwin/AndroidStudioProjects/StopWatch/app/src/main/res/drawable/btnred.xml" value="0.1" />
         <entry key="..\:/Users/edwin/AndroidStudioProjects/StopWatch/app/src/main/res/layout/activity_main.xml" value="0.1" />
         <entry key="..\:/Users/edwin/AndroidStudioProjects/StopWatch/app/src/main/res/layout/activity_stop_watch.xml" value="0.22" />
+        <entry key="app/src/main/res/layout/activity_calendar.xml" value="0.3890625" />
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.23020833333333332" />
         <entry key="app/src/main/res/layout/activity_stop_watch.xml" value="0.23020833333333332" />
+        <entry key="app/src/main/res/layout/calendar_cell.xml" value="0.1" />
       </map>
     </option>
   </component>
