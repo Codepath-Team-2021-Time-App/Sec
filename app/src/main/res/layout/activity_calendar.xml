@@ -18,7 +18,7 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="<-"
+            android:text="Prev"
             android:textColor="@color/purple_500"
             android:background="@null"
             android:textStyle="bold"
@@ -43,7 +43,7 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="->"
+            android:text="Next"
             android:textColor="@color/purple_500"
             android:background="@null"
             android:textStyle="bold"
@@ -63,7 +63,7 @@
             android:layout_weight="1"
             android:text="SUN"
             android:textAlignment="center"
-            android:textsize="10sp"/>
+            android:textSize="10sp"/>
 
         <TextView
             android:layout_width="0dp"
@@ -71,7 +71,7 @@
             android:layout_weight="1"
             android:text="MON"
             android:textAlignment="center"
-            android:textsize="10sp"/>
+            android:textSize="10sp"/>
 
         <TextView
             android:layout_width="0dp"
@@ -79,7 +79,7 @@
             android:layout_weight="1"
             android:text="TUE"
             android:textAlignment="center"
-            android:textsize="10sp"/>
+            android:textSize="10sp"/>
 
         <TextView
             android:layout_width="0dp"
@@ -87,7 +87,7 @@
             android:layout_weight="1"
             android:text="WED"
             android:textAlignment="center"
-            android:textsize="10sp"/>
+            android:textSize="10sp"/>
 
         <TextView
             android:layout_width="0dp"
@@ -95,7 +95,7 @@
             android:layout_weight="1"
             android:text="THURS"
             android:textAlignment="center"
-            android:textsize="10sp"/>
+            android:textSize="10sp"/>
 
         <TextView
             android:layout_width="0dp"
@@ -103,7 +103,7 @@
             android:layout_weight="1"
             android:text="FRI"
             android:textAlignment="center"
-            android:textsize="10sp"/>
+            android:textSize="10sp"/>
 
         <TextView
             android:layout_width="0dp"
@@ -111,7 +111,7 @@
             android:layout_weight="1"
             android:text="SAT"
             android:textAlignment="center"
-            android:textsize="10sp"/>
+            android:textSize="10sp"/>
 
 
     </LinearLayout>

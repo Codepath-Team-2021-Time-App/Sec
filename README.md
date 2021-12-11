@@ -130,5 +130,14 @@ The purpose of the app is to keep track of your habits/actions on a day to day b
 
         System.out.println(event.getSummary());
 
-### Current Progress - Unit 10 Milestone
+### Current Progress - Unit 13 Milestone
+<img src="unit13-milestone4.gif" width=200>
+
+### Unit 12 Milestone
+<img src="unit12-milestone3.gif" width=200>
+
+### Unit 11 Milestone
+<img src="unit11-milestone2.gif" width=200>
+
+### Unit 10 Milestone
 <img src="unit10-milestone1.gif" width=200>

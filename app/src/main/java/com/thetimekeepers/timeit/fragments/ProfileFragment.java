@@ -1,8 +1,8 @@
-package com.example.instagramclone.fragments;
+package com.thetimekeepers.timeit.fragments;
 
 import android.util.Log;
 
-import com.example.instagramclone.Post;
+import com.thetimekeepers.timeit.Post;
 import com.parse.FindCallback;
 import com.parse.ParseException;
 import com.parse.ParseQuery;
@@ -28,8 +28,8 @@ public class ProfileFragment extends PostsFragment {
                 for(Post post: posts){
                     Log.i(TAG, "Post: "+post.getDescription()+ ", username: "+post.getUser().getUsername());
                 }
-                allPosts.addAll(posts);
-                adapter.notifyDataSetChanged();
+                //allPosts.addAll(posts);
+                //adapter.notifyDataSetChanged();
             }
         });
     }

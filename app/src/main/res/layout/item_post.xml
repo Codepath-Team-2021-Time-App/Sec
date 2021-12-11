@@ -13,6 +13,7 @@
         android:layout_height="wrap_content"
         android:text="TextView"
         android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textColor="#FFF"
         tools:layout_editor_absoluteX="58dp"
         tools:layout_editor_absoluteY="3dp" />
 
@@ -28,5 +29,6 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="8dp"
-        android:text="trying to look hipster" />
+        android:text="trying to look hipster"
+        android:textColor="#FFF" />
 </LinearLayout>

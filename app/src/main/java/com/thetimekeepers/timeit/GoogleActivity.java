@@ -29,7 +29,7 @@ public class GoogleActivity extends AppCompatActivity {
 
     private SignInClient oneTapClient;
     private BeginSignInRequest signInRequest;
-
+/*
     @Override
     public void onCreate(@Nullable Bundle savedInstanceState,
                          @Nullable PersistableBundle persistentState) {
@@ -117,7 +117,7 @@ public class GoogleActivity extends AppCompatActivity {
         }
     }
 
-
+*/
 
 
 }

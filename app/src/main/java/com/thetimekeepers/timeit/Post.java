@@ -1,4 +1,4 @@
-package com.example.instagramclone;
+package com.thetimekeepers.timeit;
 
 //couldn't add super class (don't know how
 import com.parse.ParseClassName;
@@ -14,6 +14,7 @@ public class Post extends ParseObject{
     public static final String KEY_IMAGE = "image";
     public static final String KEY_USER = "user";
     public static final String KEY_CREATED_KEY = "createdAt"; //should match column in back4app
+    public static final String KEY_HABIT = "Habit";
 
     public String getDescription(){
         return getString(KEY_DESCRIPTION);

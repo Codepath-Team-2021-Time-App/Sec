@@ -1,4 +1,4 @@
-package com.example.instagramclone.fragments;
+package com.thetimekeepers.timeit.fragments;
 
 import static android.app.Activity.RESULT_OK;
 
@@ -30,9 +30,9 @@ import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import com.example.instagramclone.MainActivity;
-import com.example.instagramclone.Post;
-import com.example.instagramclone.R;
+import com.thetimekeepers.timeit.MainActivity;
+import com.thetimekeepers.timeit.Post;
+import com.thetimekeepers.timeit.R;
 import com.parse.FindCallback;
 import com.parse.ParseException;
 import com.parse.ParseFile;

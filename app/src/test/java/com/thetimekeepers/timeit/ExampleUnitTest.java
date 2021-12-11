@@ -1,4 +1,4 @@
-package com.example.timeit;
+package com.thetimekeepers.timeit;
 
 import org.junit.Test;
 

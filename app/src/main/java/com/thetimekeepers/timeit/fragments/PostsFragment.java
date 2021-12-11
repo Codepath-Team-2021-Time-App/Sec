@@ -1,4 +1,4 @@
-package com.example.instagramclone.fragments;
+package com.thetimekeepers.timeit.fragments;
 
 import android.os.Bundle;
 
@@ -14,9 +14,9 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
-import com.example.instagramclone.Post;
-import com.example.instagramclone.PostsAdapter;
-import com.example.instagramclone.R;
+import com.thetimekeepers.timeit.Post;
+import com.thetimekeepers.timeit.PostsAdapter;
+import com.thetimekeepers.timeit.R;
 import com.parse.FindCallback;
 import com.parse.ParseException;
 import com.parse.ParseQuery;

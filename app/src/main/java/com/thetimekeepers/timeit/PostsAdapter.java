@@ -1,4 +1,4 @@
-package com.example.instagramclone;
+package com.thetimekeepers.timeit;
 
 import android.content.Context;
 import android.view.LayoutInflater;
