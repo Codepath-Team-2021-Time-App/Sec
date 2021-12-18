@@ -130,6 +130,11 @@ The purpose of the app is to keep track of your habits/actions on a day to day b
 
         System.out.println(event.getSummary());
 
+### Final Submission
+<img src="clock-walkthrough.gif" width=200>
+
+<img src="calendar-walkthrough.gif" width=200>
+
 ### Current Progress - Unit 13 Milestone
 <img src="unit13-milestone4.gif" width=200>
 
