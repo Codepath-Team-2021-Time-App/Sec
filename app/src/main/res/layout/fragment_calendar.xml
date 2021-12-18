@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/relLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="calendar.CalendarFragment">
+
+    <com.alamkanak.weekview.WeekView
+        android:id="@+id/weekView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/white"
+        app:allDayEventHeight="20dp"
+        app:columnGap="0dp"
+
+        app:dayBackgroundColor="@android:color/white"
+        app:eventTextColor="@android:color/white"
+        app:eventTextSize="12sp"
+        app:headerColumnBackground="#000"
+        app:headerColumnPadding="16dp"
+        app:headerColumnTextColor="#606368"
+        app:headerRowBackgroundColor="@android:color/white"
+        app:headerRowPadding="9dp"
+        app:hourHeight="30dp"
+        app:hourSeparatorColor="#EDEDED"
+        app:hourSeparatorHeight="1.3dp"
+        app:noOfVisibleDays="3"
+        app:nowLineColor="#000"
+        app:overlappingEventGap="2dp"
+        app:showNowLine="true"
+        app:textSize="12sp"
+        app:todayBackgroundColor="#ff1a73e8"
+        app:todayHeaderTextColor="#ff1a73e8" />
+
+</RelativeLayout>
+
+

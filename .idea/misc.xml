@@ -6,15 +6,34 @@
         <entry key="..\:/Users/edwin/AndroidStudioProjects/StopWatch/app/src/main/res/drawable/btnred.xml" value="0.1" />
         <entry key="..\:/Users/edwin/AndroidStudioProjects/StopWatch/app/src/main/res/layout/activity_main.xml" value="0.1" />
         <entry key="..\:/Users/edwin/AndroidStudioProjects/StopWatch/app/src/main/res/layout/activity_stop_watch.xml" value="0.22" />
-        <entry key="app/src/main/res/layout/activity_calendar.xml" value="0.3890625" />
+        <entry key="app/src/main/res/drawable/ic_launcher_background copy.xml" value="0.19444444444444445" />
+        <entry key="app/src/main/res/drawable/quantum_launchscreen_calendar.xml" value="0.19444444444444445" />
+        <entry key="app/src/main/res/layout/activity_calendar.xml" value="0.33125" />
         <entry key="app/src/main/res/layout/activity_login.xml" value="0.33125" />
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.23020833333333332" />
         <entry key="app/src/main/res/layout/activity_stop_watch.xml" value="0.23020833333333332" />
         <entry key="app/src/main/res/layout/activity_stop_watch_list.xml" value="0.33125" />
         <entry key="app/src/main/res/layout/calendar_cell.xml" value="0.1" />
         <entry key="app/src/main/res/layout/calendar_month.xml" value="0.33125" />
+        <entry key="app/src/main/res/layout/calendar_month_week.xml" value="0.24322916666666666" />
+        <entry key="app/src/main/res/layout/drawerheader.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/fraglay.xml" value="0.12685185185185185" />
+        <entry key="app/src/main/res/layout/fragment_calendar.xml" value="0.18" />
+        <entry key="app/src/main/res/layout/fragment_compose.xml" value="0.12685185185185185" />
+        <entry key="app/src/main/res/layout/fragment_month.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/fragment_post.xml" value="0.33125" />
+        <entry key="app/src/main/res/layout/gridlay.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/headerview.xml" value="0.12685185185185185" />
         <entry key="app/src/main/res/layout/item_post.xml" value="0.24583333333333332" />
         <entry key="app/src/main/res/layout/list.xml" value="0.24583333333333332" />
+        <entry key="app/src/main/res/layout/monthgriditem.xml" value="0.12685185185185185" />
+        <entry key="app/src/main/res/layout/monthgriditemlspace.xml" value="0.12685185185185185" />
+        <entry key="app/src/main/res/layout/noplanlay.xml" value="0.12685185185185185" />
+        <entry key="app/src/main/res/layout/view_item.xml" value="0.12685185185185185" />
+        <entry key="app/src/main/res/layout/viewlast.xml" value="0.1" />
+        <entry key="app/src/main/res/menu/menu.xml" value="0.12685185185185185" />
+        <entry key="app/src/main/res/menu/menu_bottom_navigation.xml" value="0.1" />
+        <entry key="app/src/main/res/menu/nav_item.xml" value="0.12685185185185185" />
       </map>
     </option>
   </component>

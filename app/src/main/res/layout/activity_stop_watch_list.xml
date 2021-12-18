@@ -24,6 +24,7 @@
         android:layout_marginStart="8dp"
         android:layout_marginTop="60dp"
         android:layout_marginEnd="8dp"
+        android:textColor="#FFF"
         android:textSize="50sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.497"
@@ -42,17 +43,6 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <ListView
-        android:id="@+id/listView"
-        android:layout_width="wrap_content"
-        android:layout_height="130dp"
-        android:layout_marginTop="1dp"
-        android:cacheColorHint="#FFF"
-        android:textAlignment="center"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/timerHere" />
-
     <TextClock
         android:id="@+id/idTextClock"
         android:layout_width="135dp"
@@ -61,6 +51,7 @@
         android:ems="10"
         android:format12Hour="hh:mm:ss"
         android:inputType="time"
+        android:textColor="#FFF"
         android:textSize="35dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
@@ -68,43 +59,48 @@
         app:layout_constraintTop_toBottomOf="@+id/bgcircle"
         tools:text="12:00:00" />
 
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/actPosts"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="500dp"
+        android:layout_marginBottom="40dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/timerHere" />
+
     <Button
         android:id="@+id/btn_add"
         android:layout_width="120dp"
-        android:layout_height="48dp"
+        android:layout_height="40dp"
         android:layout_marginStart="20dp"
         android:layout_marginEnd="10dp"
         android:text="ADD"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/btn_stop"
-        app:layout_constraintTop_toBottomOf="@+id/listView"
-        app:layout_constraintVertical_bias="0.0" />
+        app:layout_constraintStart_toEndOf="@+id/btn_stop" />
 
     <Button
         android:id="@+id/btn_stop"
         android:layout_width="120dp"
-        android:layout_height="48dp"
+        android:layout_height="40dp"
         android:text="STOP"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/btn_add"
         app:layout_constraintHorizontal_bias="0.473"
-        app:layout_constraintStart_toEndOf="@+id/btn_schedule"
-        app:layout_constraintTop_toBottomOf="@+id/listView"
-        app:layout_constraintVertical_bias="0.0" />
+        app:layout_constraintStart_toEndOf="@+id/btn_schedule" />
 
     <Button
         android:id="@+id/btn_schedule"
         android:layout_width="120dp"
-        android:layout_height="48dp"
+        android:layout_height="40dp"
         android:layout_marginStart="10dp"
         android:layout_marginEnd="20dp"
         android:text="Schedule"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/btn_stop"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/listView"
-        app:layout_constraintVertical_bias="0.0" />
+        app:layout_constraintStart_toStartOf="parent" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

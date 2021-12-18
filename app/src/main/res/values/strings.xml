@@ -1,3 +1,14 @@
 <resources>
-    <string name="app_name">TimeIt</string>
+    <string name="app_name">TimeIt!</string>
+
+    <string name="back4app_server_url">https://parseapi.back4app.com/</string>
+    <!-- Change BOTH strings as required -->
+    <string name="back4app_app_id">qYrzSOTpQiNAsQgJDUh7ip1IyqiidVke7ny0xrgn</string>
+    <string name="back4app_client_key">e2law5zg6owPtfeGmztayRsfc2wN2T62hyEJHW85</string>
+    <!-- TODO: Remove or change this placeholder text -->
+
+    <string name="action_today">Today</string>
+    <string name="action_day_view">Day view</string>
+    <string name="action_three_day_view">3 day view</string>
+    <string name="action_week_view">Week view</string>
 </resources>

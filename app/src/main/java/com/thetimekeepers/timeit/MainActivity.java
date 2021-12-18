@@ -7,11 +7,13 @@ import androidx.core.content.FileProvider;
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;
 
+import android.content.pm.PackageManager;
 import android.content.Intent;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.net.Uri;
 import android.os.Bundle;
+import android.os.Handler;
 import android.os.Environment;
 import android.provider.MediaStore;
 import android.util.Log;
@@ -23,9 +25,7 @@ import android.widget.ImageView;
 import android.widget.Toast;
 
 import com.thetimekeepers.timeit.fragments.ClockFragment;
-import com.thetimekeepers.timeit.fragments.ComposeFragment;
-import com.thetimekeepers.timeit.fragments.PostsFragment;
-import com.thetimekeepers.timeit.fragments.ProfileFragment;
+import com.thetimekeepers.timeit.calendar.CalendarFragment;
 import com.google.android.material.bottomnavigation.BottomNavigationItemView;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 import com.parse.FindCallback;
@@ -37,6 +37,7 @@ import com.parse.SaveCallback;
 
 import java.io.File;
 import java.util.List;
+import java.time.LocalDate;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -49,22 +50,22 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        bottomNavigationView  = findViewById(R.id.bottom_navigation);
+        bottomNavigationView = findViewById(R.id.bottom_navigation);
 
-        bottomNavigationView.setOnNavigationItemSelectedListener(new BottomNavigationView.OnNavigationItemSelectedListener() {
+        bottomNavigationView.setOnItemSelectedListener(new BottomNavigationView.OnItemSelectedListener() {
             @Override
             public boolean onNavigationItemSelected(@NonNull MenuItem menuItem) {
                 Fragment fragment;
                 switch (menuItem.getItemId()) {
-                    case R.id.action_home:
-                        fragment = new PostsFragment();
-                        break;
-                    case R.id.action_compose:
+                    case R.id.action_clock:
                         fragment = new ClockFragment();
                         break;
-                    case R.id.action_profile:
+                    case R.id.action_calendar:
+                        fragment = new CalendarFragment();
+                        break;
+                    case R.id.action_habits:
                     default:
-                        fragment = new ProfileFragment();
+                        fragment = new ClockFragment();
                         break;
                 }
                 fragmentManager.beginTransaction().replace(R.id.flContainer, fragment).commit();
@@ -72,7 +73,7 @@ public class MainActivity extends AppCompatActivity {
             }
         });
         // Set default selection
-        bottomNavigationView.setSelectedItemId(R.id.action_home);
+        bottomNavigationView.setSelectedItemId(R.id.action_clock);
     }
 
 

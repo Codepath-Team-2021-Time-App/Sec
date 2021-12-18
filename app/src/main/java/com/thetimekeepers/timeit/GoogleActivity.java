@@ -1,3 +1,4 @@
+/*
 package com.thetimekeepers.timeit;
 
 import android.content.Intent;
@@ -19,8 +20,10 @@ import com.google.android.gms.common.api.ApiException;
 import com.google.android.gms.common.api.CommonStatusCodes;
 import com.google.android.gms.tasks.OnFailureListener;
 import com.google.android.gms.tasks.OnSuccessListener;
+*/
 
-public class GoogleActivity extends AppCompatActivity {
+public class GoogleActivity {
+/*
     private static final String TAG = "";
     private static final int REQ_ONE_TAP = 2; // Can be any integer unique to the Activity.
     private boolean showOneTapUI = true;
@@ -118,6 +121,4 @@ public class GoogleActivity extends AppCompatActivity {
     }
 
 */
-
-
 }

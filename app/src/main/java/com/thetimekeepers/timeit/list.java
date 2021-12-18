@@ -1,6 +1,5 @@
 package com.thetimekeepers.timeit;
 
-import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
@@ -12,21 +11,24 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.thetimekeepers.timeit.fragments.ClockFragment;
+import com.parse.ParseObject;
+import com.parse.ParseQuery;
 
 import org.apache.commons.io.FileUtils;
 
 import java.io.File;
 import java.io.IOException;
+import java.io.Serializable;
 import java.nio.charset.Charset;
 import java.util.ArrayList;
 import java.util.List;
-import org.parceler.Parcels;
+
+import com.thetimekeepers.timeit.PostsAdapter;
 
 
-public class list extends AppCompatActivity {
-    public List<String> items;
-
+public class list extends AppCompatActivity implements Serializable {
+    //    public List<String> items;
+    ArrayList<String> items = new ArrayList<>();
     Button btnAdd;
     Button btnSendDataBack;
     EditText etItem;
@@ -43,16 +45,21 @@ public class list extends AppCompatActivity {
         rvItems = findViewById(R.id.rvItems);
         btnSendDataBack = findViewById(R.id.btnSend);
 
-//        etItem.setText("I'm doing this from java!"); //text:
+        allPosts = new ArrayList<>();
         loadItems();
-
 
 
         ItemsAdapter.OnLongClickListener onLongClickListener= new ItemsAdapter.OnLongClickListener(){
             @Override
             public void onItemLongClicked(int position) {
                 //Delete the item from the model
+                //deleting from back4app
+                String value = items.get(position);
                 items.remove(position);
+
+                //same for both posts - removing from back4app
+                post.remove(value);
+
                 //notify the adapter
                 itemsAdapter.notifyItemRemoved(position);
                 Toast.makeText(getApplicationContext(),"item was removed", Toast.LENGTH_SHORT).show();
@@ -63,41 +70,30 @@ public class list extends AppCompatActivity {
         itemsAdapter = new ItemsAdapter(items, onLongClickListener);
         rvItems.setAdapter(itemsAdapter);
         rvItems.setLayoutManager(new LinearLayoutManager(this));
-        
-        btnAdd.setOnClickListener(new View.OnClickListener() {
-         @Override
-         public void onClick(View v) {
-            String todoItem = etItem.getText().toString();
-            //add item to the model
-             items.add(todoItem);
-             //Notify adapter that an item is inserted
-             itemsAdapter.notifyItemInserted(items.size() - 1);
-             etItem.setText("");
-             Toast.makeText(getApplicationContext(),"item was added", Toast.LENGTH_SHORT).show();
-             saveItems();
-         }
-        });
 
-        btnSendDataBack.setOnClickListener(new View.OnClickListener() {
+        btnAdd.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                // Create an intent
-                Intent intent = new Intent(list.this, ClockFragment.class);
-                intent.putExtra("list",Parcels.wrap(items));
-                //not sure of this:
-                setResult(RESULT_OK,intent);
-//                startActivity(intent);
+                String todoItem = etItem.getText().toString();
+                Toast.makeText(getApplicationContext(),todoItem+" item was added", Toast.LENGTH_SHORT).show();
+                //add item to the model
+                items.add(todoItem);
 
-                intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
-                finish();
-                //goes back to original but don't think I go back with it
-                // wrap the list object in a Parcel
+                //adding to back4app!!
+                post.put("action",todoItem);
 
-                // go to the mainPage with the new data and extract it:
+                //SAVING TO DATABASE!!!
+                post.saveInBackground();
+
+                //Notify adapter that an item is inserted
+                itemsAdapter.notifyItemInserted(items.size() - 1);
+                etItem.setText("");
+                Toast.makeText(getApplicationContext(),"item was added", Toast.LENGTH_SHORT).show();
+                saveItems();
             }
         });
-
     }
+
     public File getDataFile() {
         return new File(getFilesDir(), "data.txt");
     }
@@ -121,3 +117,31 @@ public class list extends AppCompatActivity {
         }
     }
 }
+
+// this is what I tried to do without using parse (tried to use parcel or Serializable
+//remove extends Serializable
+//        btnSendDataBack.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View v) {
+//                 Create an intent
+//                Intent intent = new Intent(list.this, ClockFragment.class);
+//                intent.putExtra("list",Parcels.wrap(items));
+//                //not sure of this:
+//                startActivity(intent);
+//                intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
+//                finish();
+//                goes back to original but don't think I go back with it
+//                 wrap the list object in a Parcel
+//                Intent intent = new Intent(list.class, ClockFragment.class);
+//                don't know if it's setup this way
+//                Fragment ClockFragment = new Fragment(); // this does not work as proper
+//                Bundle bundle = new Bundle();
+//                bundle.putSerializable("key", items);
+//                ClockFragment.setArguments(bundle);
+//                return ClockFragment;
+//                intent.putExtra(bundle);
+//                startActivity(intent);
+//
+//                 go to the mainPage with the new data and extract it:
+//            }
+//        });

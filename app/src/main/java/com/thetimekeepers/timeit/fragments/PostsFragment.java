@@ -32,6 +32,7 @@ public class PostsFragment extends Fragment {
     private RecyclerView rvPosts;
     protected PostsAdapter adapter;
     protected List<Post> allPosts;
+
     //Added!
     SwipeRefreshLayout swipeContainer;
 
